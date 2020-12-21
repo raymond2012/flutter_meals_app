@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:meals_app/screens/categoy_meals_screen.dart';
-import 'screens/catagories_screen.dart';
+import './screens/categoy_meals_screen.dart';
+import './screens/meals_detail_screen.dart';
+import './screens/catagories_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,26 +35,27 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (ctx) => CategoriesScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
+        MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
+// class MyHomePage extends StatefulWidget {
+//   @override
+//   _MyHomePageState createState() => _MyHomePageState();
+// }
 
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('DeliMeals'),
-      ),
-      body: Center(
-        child: Text("Navigation Time!"),
-      ),
-    );
-  }
-}
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('DeliMeals'),
+//       ),
+//       body: Center(
+//         child: Text("Navigation Time!"),
+//       ),
+//     );
+//   }
+// }
