@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/tabs_screen.dart';
+import './screens/filters_screen.dart';
+import './screens/tabs_screen.dart';
 import './screens/categoy_meals_screen.dart';
 import './screens/meals_detail_screen.dart';
 import './screens/catagories_screen.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         '/': (ctx) => TabsScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        FilterScreen.routeName: (ctx) => FilterScreen(),
       },
 
       // Handle routing for any unregistered named route
